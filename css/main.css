@@ -1515,7 +1515,7 @@ html[dir='rtl'] .test .pat {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 7px 0;
+    padding: 0 0;
   }
 }
 
@@ -1526,6 +1526,12 @@ html[dir='rtl'] .test .pat {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 992px) {
+  .top-links {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1608,6 +1614,15 @@ html[dir='rtl'] .top-link:last-of-type {
           align-items: center;
 }
 
+@media (max-width: 992px) {
+  .top-settings {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0;
+  }
+}
+
 .top-setting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1625,12 +1640,24 @@ html[dir='ltr'] .top-setting.lang {
   margin-right: 24px;
 }
 
+@media (max-width: 992px) {
+  html[dir='ltr'] .top-setting.lang {
+    margin: 0;
+  }
+}
+
 html[dir='rtl'] .top-setting {
   margin-left: 18px;
 }
 
 html[dir='rtl'] .top-setting.lang {
   margin-left: 24px;
+}
+
+@media (max-width: 992px) {
+  html[dir='rtl'] .top-setting.lang {
+    margin: 0;
+  }
 }
 
 .top-setting .drop-label {
