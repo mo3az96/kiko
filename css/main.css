@@ -2069,6 +2069,7 @@ html[dir='rtl'] .mo-setting-icon.mo-cart-icon {
   .count {
     top: 2px;
     right: 1px;
+    padding-top: 5px;
   }
 }
 
