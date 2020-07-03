@@ -612,6 +612,10 @@ html[dir='rtl'] .nav-li:last-of-type {
   transition: all 0.3s ease-in-out;
 }
 
+html[dir='rtl'] .nav-a {
+  font-weight: 500;
+}
+
 .sub-ul {
   position: absolute;
   top: 100%;
@@ -659,6 +663,10 @@ html[dir='rtl'] .nav-li:last-of-type {
 .sub-a:hover .sub-img img {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+html[dir='rtl'] .sub-a {
+  font-weight: 500;
 }
 
 .sub-img {
@@ -958,6 +966,10 @@ html[dir='rtl'] .nav-li:last-of-type {
   padding: 0 7px;
 }
 
+html[dir='rtl'] .product .sale-hint {
+  font-weight: 500;
+}
+
 .product .pro-img-cont {
   display: block;
   border: 2px solid #fafafa;
@@ -1006,6 +1018,7 @@ html[dir='rtl'] .nav-li:last-of-type {
   text-overflow: ellipsis;
   display: block;
   margin-top: 18px;
+  padding-bottom: 5px;
 }
 
 .product .pro-name a {
@@ -1032,7 +1045,7 @@ html[dir='rtl'] .nav-li:last-of-type {
       -ms-flex-pack: center;
           justify-content: center;
   height: 12px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .product .mo-rating i {
@@ -1063,6 +1076,10 @@ html[dir='rtl'] .nav-li:last-of-type {
 .product .mo-price {
   font-size: 18px;
   color: #ef3c24;
+}
+
+html[dir='rtl'] .product .mo-price {
+  font-weight: bold;
 }
 
 .product .mo-oldprice {
@@ -1534,9 +1551,28 @@ html[dir='rtl'] .test .pat {
   border-radius: 10px;
   font-size: 15px;
   padding: 0 14px;
-  margin-right: 27px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+html[dir='ltr'] .catalouge {
+  margin-right: 27px;
+}
+
+@media (max-width: 992px) {
+  html[dir='ltr'] .catalouge {
+    margin: auto;
+  }
+}
+
+html[dir='rtl'] .catalouge {
+  margin-left: 27px;
+}
+
+@media (max-width: 992px) {
+  html[dir='rtl'] .catalouge {
+    margin: auto;
+  }
 }
 
 .catalouge:hover {
@@ -1548,6 +1584,10 @@ html[dir='rtl'] .test .pat {
   .catalouge {
     margin: auto;
   }
+}
+
+html[dir='rtl'] .catalouge {
+  font-weight: 500;
 }
 
 .top-link {
@@ -2624,6 +2664,9 @@ html[dir='rtl'] .download .download-link:last-of-type {
   nav .nav-a:hover {
     color: #07a44a;
   }
+  html[dir='rtl'] nav .nav-a {
+    font-weight: 500;
+  }
   nav .sub-ul {
     padding: 0 15px;
     position: relative;
@@ -2713,6 +2756,9 @@ html[dir='rtl'] .download .download-link:last-of-type {
     font-weight: bold;
     color: #2a4ea1;
   }
+  html[dir='rtl'] nav .top-setting .drop-label {
+    font-weight: 500;
+  }
   nav .top-setting .drop-anchor {
     font-size: 16px;
     font-weight: bold;
@@ -2728,6 +2774,9 @@ html[dir='rtl'] .download .download-link:last-of-type {
   nav .top-setting .drop-anchor:after {
     color: rgba(50, 53, 93, 0.7);
     font-size: 13px;
+  }
+  html[dir='rtl'] nav .top-setting .drop-anchor {
+    font-weight: 500;
   }
   nav .top-setting .drop-down {
     padding: 0 15px;
