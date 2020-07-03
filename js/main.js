@@ -37,7 +37,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             0: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 15,
             },
             767: {
@@ -65,7 +65,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             0: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 15,
             },
             767: {
@@ -101,7 +101,7 @@ $(document).ready(function () {
             },
             breakpoints: {
                 0: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.5,
                     spaceBetween: 15,
                 },
                 767: {
@@ -154,6 +154,8 @@ $(document).ready(function () {
     if ($(window).width() <= 991) {
         $(".drop-li .nav-a").addClass("mo-accordion");
         $(".drop-li .sub-ul").addClass("mo-panel");
+        $(".nav-xs .labels").addClass("mo-accordion");
+        $(".nav-xs .drop-down").addClass("mo-panel");
     }
     $('.mo-menu-icon').click(function () {
         $("nav").fadeIn(300);
