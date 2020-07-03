@@ -37,7 +37,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             0: {
-                slidesPerView: 1.5,
+                slidesPerView: 1,
                 spaceBetween: 15,
             },
             767: {
@@ -65,7 +65,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             0: {
-                slidesPerView: 1.5,
+                slidesPerView: 1,
                 spaceBetween: 15,
             },
             767: {
@@ -101,7 +101,7 @@ $(document).ready(function () {
             },
             breakpoints: {
                 0: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 1,
                     spaceBetween: 15,
                 },
                 767: {
