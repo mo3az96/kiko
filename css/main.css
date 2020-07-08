@@ -2627,9 +2627,15 @@ html[dir='rtl'] .headers-title {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html[dir='ltr'] .mo-nav {
+    width: 970px;
+  }
+  html[dir='rtl'] .mo-nav {
+    width: 600px;
   }
 }
 
