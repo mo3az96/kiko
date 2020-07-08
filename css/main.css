@@ -2084,6 +2084,12 @@ html[dir='rtl'] .mo-setting-icon.mo-cart-icon {
   padding: 35px 0;
 }
 
+@media (max-width: 992px) {
+  .mo-breadcrumb {
+    margin-top: 15px;
+  }
+}
+
 .breadcrumb-ul {
   display: -webkit-box;
   display: -ms-flexbox;
