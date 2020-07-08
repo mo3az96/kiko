@@ -2073,6 +2073,54 @@ html[dir='rtl'] .mo-setting-icon.mo-cart-icon {
   }
 }
 
+.mo-breadcrumb {
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px 0;
+}
+
+.breadcrumb-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumb-li::after {
+  content: "/";
+  margin: 0 12px;
+  font-size: 15px;
+  color: #9e9e9e;
+}
+
+.breadcrumb-li:last-of-type::after {
+  display: none;
+}
+
+.breadcrumb-a {
+  font-size: 15px;
+  color: #9e9e9e;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-a:hover {
+  color: #07a44a;
+}
+
 .pat {
   position: absolute;
 }
@@ -2330,6 +2378,175 @@ html[dir='rtl'] .products-slider-sec:nth-of-type(3) .pat:nth-of-type(2) {
     bottom: auto;
     margin: 40px auto 0;
   }
+}
+
+.videos-cont {
+  position: relative;
+}
+
+.videos-cont .pat {
+  top: 94px;
+}
+
+html[dir='ltr'] .videos-cont .pat {
+  left: 0;
+}
+
+html[dir='rtl'] .videos-cont .pat {
+  right: 0;
+}
+
+.videos {
+  margin-top: 45px;
+}
+
+.video-cont {
+  position: relative;
+  padding-bottom: 88.8888888889%;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .video-cont {
+    margin-bottom: 20px;
+  }
+}
+
+.video-cont .video-link {
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.video-cont .video-link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.video-cont .video-link::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.3;
+  z-index: 2;
+  content: "";
+}
+
+.video-cont .video-link .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px dashed #fff;
+  width: 66px;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+.video-cont .video-link .play-icon i {
+  width: 58px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  color: #ef3c24;
+  border-radius: 50%;
+  font-size: 20.5px;
+}
+
+.video-cont .video-link:hover img {
+  -webkit-transform: scale(1.1) rotate(-5deg);
+          transform: scale(1.1) rotate(-5deg);
+}
+
+.mo-pageing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 34px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+  .mo-pageing {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.page-a {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #cccccc;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-a:hover {
+  background-color: #f088b8;
+  color: #fff;
+}
+
+.page-a:focus {
+  color: #fff;
+}
+
+.page-li {
+  margin: 0 5px;
+}
+
+.page-li.active .page-a {
+  background-color: #07a44a;
 }
 
 .newsletter {
